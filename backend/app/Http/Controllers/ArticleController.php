@@ -63,7 +63,7 @@ class ArticleController extends Controller
 
         return [
             'id' => $article->id,
-            'countLike' => $article->count_likes,
+            'countLikes' => $article->count_likes,
         ];
     }
 
