@@ -12,9 +12,15 @@
 
 <script>
 export default {
+    props: {
+        initialIsFollowedBy: {
+            type: String,
+            default: false,
+        }
+    },
     data() {
         return {
-            isFollowedBy: false,
+            isFollowedBy: this.initialIsFollowedBy,
         };
     },
     computed: {
